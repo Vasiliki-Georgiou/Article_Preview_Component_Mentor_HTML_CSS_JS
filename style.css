@@ -1,0 +1,106 @@
+/* Common & Reset Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --very_dark_grayish_blue: hsl(217, 19%, 35%);
+  --desaturated_dark_blue: hsl(214, 17%, 51%);
+  --grayish_blue: hsl(212, 23%, 69%);
+  --light_grayish_blue: hsl(210, 46%, 95%);
+}
+
+/* End of Common & Reset Styles */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--light_grayish_blue);
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.3rem;
+}
+
+.card {
+  width: 24rem;
+  background-color: #fff;
+  border-radius: 1.2rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 0 0.7rem;
+  color: var(--very_dark_grayish_blue);
+}
+
+.card-text {
+  font-weight: 500;
+  padding: 0 0.7rem;
+  color: var(--desaturated_dark_blue);
+  font-size: 1rem;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.avatar-container img {
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.user-info span {
+  display: block;
+  font-size: 1rem;
+}
+
+span:first-child {
+  color: var(--very_dark_grayish_blue);
+  font-weight: 700;
+}
+
+span:last-child {
+  color: var(--grayish_blue);
+  font-weight: 700;
+}
+
+.btn-container {
+  background-color: var(--light_grayish_blue);
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+}
+
+.btn-container a svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 50%);
+}
+
+.social-media-icons-modal {
+  display: none;
+}
