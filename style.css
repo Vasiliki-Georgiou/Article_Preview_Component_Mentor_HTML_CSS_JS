@@ -137,6 +137,11 @@ span:last-child {
   left: 0;
   transform: translate(48%, -280%);
   z-index: 10;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
 }
 
 .social-media-icons-modal::after {
@@ -234,7 +239,6 @@ span:last-child {
     transform: translate(152%, -300%);
     z-index: 10;
   }
-
 }
 
 /* End of Responsive */
