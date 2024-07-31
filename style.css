@@ -23,6 +23,7 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -125,16 +126,16 @@ span:last-child {
 
 .social-media-icons-modal {
   background-color: var(--very_dark_grayish_blue);
-  width: 20rem;
+  width: 17rem;
   padding: 1rem;
   border-radius: 0.8rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(48%, -280%);
   z-index: 10;
 }
 
@@ -157,3 +158,83 @@ span:last-child {
   font-size: 1rem;
   letter-spacing: 0.3rem;
 }
+
+/* Responsive */
+
+@media(min-width: 375px) {
+  html {
+    font-size: 70%;
+  }
+
+  .btn-container a svg {
+    transform: translate(45%, 40%);
+  }
+}
+
+@media(min-width: 425px) {
+  html {
+    font-size: 75%;
+  }
+
+  .btn-container a svg {
+    transform: translate(50%, 50%);
+  }
+}
+
+@media(min-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+
+  .btn-container a svg {
+    transform: translate(60%, 60%);
+  }
+}
+
+@media(min-width: 1440px) {
+  .card {
+    width: 60rem;
+    height: 22rem;
+    flex-direction: row;
+  }
+
+  .card-img-top {
+    width: 45%;
+    height: 100%;
+    border-bottom-left-radius: 1.2rem;
+    border-top-right-radius: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-body {
+    padding: 3rem;
+  }
+
+  .card-title {
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    padding: 0;
+  }
+
+  .card-text {
+    padding: 0;
+  }
+
+  .card-bottom {
+    justify-content: space-between;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .social-media-icons-modal {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(152%, -300%);
+    z-index: 10;
+  }
+
+}
+
+/* End of Responsive */
